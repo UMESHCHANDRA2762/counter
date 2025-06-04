@@ -17,7 +17,7 @@ function Counter() {
     if (storeStep !== undefined) {
       setInputValue(storeStep.toString());
     } else {
-      setInputValue("1"); // Default to '1' if storeStep is undefined on mount
+      setInputValue("1");
     }
   }, [storeStep]);
 
@@ -30,8 +30,8 @@ function Counter() {
     if (!isNaN(newStep) && newStep > 0) {
       setStoreStep(newStep);
     } else {
-      setStoreStep(1); // Default to 1 if input is invalid
-      setInputValue("1"); // Reflect the default in the input field
+      setStoreStep(1);
+      setInputValue("1");
     }
   };
 
