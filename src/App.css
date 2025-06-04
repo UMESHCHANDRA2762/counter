@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #f4f7f9; /* Lighter, cleaner background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #333; /* Default text color */
+}
+
+.app-container {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem; /* Slightly more horizontal padding */
+  border-radius: 10px; /* Softer border radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08); /* Softer, more modern shadow */
+  width: 100%;
+  max-width: 360px; /* Consistent max-width */
+  text-align: center;
+}
+
+.counter-title {
+  font-size: 1.75rem; /* Adjusted for balance */
+  color: #2c3e50; /* Darker, more professional blue-gray */
+  margin-bottom: 1.25rem;
+  font-weight: 600; /* Semibold for title */
+}
+
+.count-display {
+  font-size: 3.5rem;
+  color: #3498db; /* Professional blue */
+  margin-bottom: 1.5rem;
+  font-weight: 700; /* Bold for emphasis */
+  line-height: 1; /* Ensure tight line height */
+}
+
+.step-input-container {
+  margin-bottom: 1.75rem; /* More space around input */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* Space between label and input */
+}
+
+.step-input-container label {
+  font-size: 0.875rem; /* Slightly smaller label */
+  color: #555;
+  font-weight: 500; /* Medium weight for label */
+}
+
+.step-input {
+  padding: 0.6rem; /* Comfortable padding */
+  border: 1px solid #d1d5db; /* Lighter gray border */
+  border-radius: 6px; /* Consistent border radius */
+  width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.step-input:focus {
+  outline: none;
+  border-color: #3498db; /* Blue border on focus */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); /* Subtle blue glow */
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem; /* Slightly more gap */
+  margin-bottom: 1.25rem;
+}
+
+.button {
+  font-family: inherit; /* Use body font */
+  font-weight: 600; /* Semibold for buttons */
+  padding: 0.75rem 1.25rem; /* Balanced padding for good size */
+  border-radius: 6px; /* Consistent border radius */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.15s ease-in-out, transform 0.1s ease-in-out;
+  line-height: 1.2; /* Ensure text is centered well */
+  min-width: 50px; /* Minimum width for +/- buttons */
+  display: inline-flex; /* Helps with centering content if it's an icon later */
+  align-items: center;
+  justify-content: center;
+}
+
+.button:active {
+  transform: scale(0.97); /* Slightly more subtle press */
+}
+
+.op-button {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+.op-button:hover {
+  background-color: #2980b9; /* Darker blue */
+}
+
+.reset-button {
+  background-color: #e74c3c; /* Softer red */
+  color: white;
+  width: 100%;
+}
+.reset-button:hover {
+  background-color: #c0392b; /* Darker softer red */
+}
+
+.footer-text {
+  margin-top: 2rem; /* More space above footer */
+  font-size: 0.8rem;
+  color: #7f8c8d; /* Softer gray for footer */
+}
